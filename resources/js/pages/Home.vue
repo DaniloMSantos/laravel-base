@@ -1,19 +1,23 @@
 <template>
-    <div class="container">
-        <h1>Laravel + Vue Base</h1>
-        <p>
-            Esta é a página inicial base para novos projetos.
-        </p>
+    <div class="page">
+        <AppHeader />
+
+        <HomeContent />
+
+        <AppFooter />
     </div>
 </template>
 
 <script setup>
+import AppHeader from '../components/AppHeader.vue';
+import AppFooter from '../components/AppFooter.vue';
+import HomeContent from '../components/HomeContent.vue';
 </script>
 
 <style scoped>
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    font-family: Arial, sans-serif;
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 </style>
